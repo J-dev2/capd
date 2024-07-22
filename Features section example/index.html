@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feature Section</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .feature-section {
+            padding: 20px;
+            background-color: #f9f9f9;
+            margin:-48px -24px 0px
+        }
+        .feature-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+            
+        }
+        .feature-container h2 {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+        .feature-container hr {
+            width: 50%;
+            margin: 0 auto 20px;
+            border: 1px solid #ccc;
+        }
+        .main-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+        .main-left {
+            flex: 1;
+            min-width: 300px;
+            padding: 20px;
+            text-align: left;
+        }
+        .main-left h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        .main-left p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+        .main-left button {
+            padding: 10px 20px;
+            font-size: 1em;
+            cursor: pointer;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+        .cards-container {
+            flex: 1;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            min-width: 300px;
+        }
+        .card {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .icon{
+            font-size: 2em;
+            margin-bottom: -10px;
+            background-color: #007BFF;
+            border-radius: 10px;
+            align-items: center;
+        }
+
+        .card{
+            height:145px;
+        }
+
+        .card h1 {
+            font-size: 24x;
+            font-style: 600;
+            margin-bottom: -10px;
+            position:static;
+        }
+
+        .card p {
+            font-size: 1em;
+            margin-bottom: 15px;
+            text-align: left;
+        }
+
+        @media (max-width: 768px) {
+            .main-content {
+                flex-direction: column;
+                align-items: center;
+            }
+            .main-left, .cards-container {
+                min-width: 100%;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<section class="feature-section">
+         <div class="feature-container">
+        <h2>Our Features</h2>
+        <hr>
+        <div class="main-content">
+            <div class="main-left">
+                <h1>Main Heading</h1>
+                <p>This is the main description for the feature section. It explains the main points and benefits in detail.</p>
+                <button>Learn More</button>
+            </div>
+            <div class="cards-container">
+                <div class="card">
+                    <i class="icon">🔥</i>
+                    <h1>Feature 1</h1>
+                    <p>Feature 1 description goes here. Highlighting the main points of this feature.</p>
+                    
+                </div>
+                <div class="card">
+                    <i class="icon">🚀</i>
+                    <h1>Feature 2</h1>
+                    <p>Feature 2 description goes here. Highlighting the main points of this feature.</p>
+                    
+                </div>
+                <div class="card">
+                    <i class="icon">💼</i>
+                    <h1>Feature 3</h1>
+                    <p>Feature 3 description goes here. Highlighting the main points of this feature.</p>
+                    
+                </div>
+                <div class="card">
+                    <i class="icon">🎨</i>
+                    <h1>Feature 4</h1>
+                    <p>Feature 4 description goes here. Highlighting the main points of this feature.</p>
+                    
+                </div>
+            </div>
+        </div>
+        <div>
+</section>
+
+</body>
+</html>
